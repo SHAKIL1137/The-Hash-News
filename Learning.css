@@ -1,0 +1,275 @@
+
+/* Body is started*/
+body {
+    background-color: skyblue;
+    color: black;
+    padding: 0;
+    margin: 0;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* Header is started */
+
+.header {
+    display: flex;
+    background-color: gray;
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+    
+    align-items: center;
+}
+.date {
+    font-size:12px;
+    text-align: left;
+    
+    
+    padding: 0;
+    margin: 0;
+}
+
+.name {
+        font-size: 72px;
+        padding: 0;
+        margin: 0;
+}
+
+.dark-theme {
+     background-color: skyblue;
+     transition: background 0.2s;
+     font-size: 12px;
+
+    padding: 0;
+    margin: 0;
+    text-align: right;
+    }
+
+
+
+
+
+
+
+
+
+
+
+.navbar {
+        position: sticky;
+        z-index: 1000;
+        top: 0;
+        }
+
+
+h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.gridMap {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    gap: 20px;
+    align-items: start;
+    margin: 20px 20px;
+    
+}
+
+img {
+
+max-width: 100%;
+height: auto;
+display: block;
+object-fit: cover;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.stick {
+        background-color: saddlebrown;
+        
+        padding: 0;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        }
+
+
+
+
+    .breakingNews{
+        background-color: lightgoldenrodyellow;
+        color: black;        
+        padding: 0;
+        margin: 0;
+        z-index: 100;
+        overflow: hidden;
+        font-size: 16px;
+    }
+
+    .breakingNews2 {
+        z-index: 50;
+
+    }
+        .breakingList {
+            white-space: nowrap;
+            list-style: square;
+            display: flex;
+            padding: 0;
+            margin: 0;
+            gap: 25px;
+            font-size: 16px;
+            flex-shrink: 0;
+          
+            animation: scroll 15s linear infinite;
+        }
+
+            @keyframes scroll {
+                from{transform: translateX(100%);}
+                to{transform: translateX(-100%);}
+
+            }
+
+.stick:hover .breakingList {
+            animation-play-state: paused;
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .manuBar {
+        background-color: rgb(184, 162, 166);
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        border-left:  1px solid black;
+        border-right:  2px solid black;
+        padding: 0;
+        margin: 0;
+        font-size: 22px;
+        }
+
+
+
+
+
+
+
+    .navigationMenu {
+        display: flex;   
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        position: relative;
+     }
+    .navigationMenu li:hover {
+
+        background-color: crimson;
+        color: #121212;
+    }
+    .menu {
+        font-size: 18px;
+        font-weight: bold;
+        background-color: white;
+        display: none;
+        position: absolute;
+        list-style: none;
+        min-width: auto;
+        max-width: auto;
+
+        top: 100%;
+        left: 0;
+        padding: 0;
+        margin: 0;
+        }
+    .navigationMenu >li:first-child:hover .menu {
+        display: block;
+    }
+        .menu li:hover {
+        background-color: aquamarine;
+        color: black;
+        cursor: pointer;
+    }
+
+
+
+
+
+
+
+
+footer {
+    font-size: 12px;
+    padding: 4px;
+    margin: 4px;
+}
+.communicationList {
+        display: flex;
+        gap: 10px;
+        white-space: nowrap;
+        list-style: none;
+        cursor: pointer;
+        font-size: 20px;       
+}
+
+
+
+/* It hides the address with css */
+#address {
+    display: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
